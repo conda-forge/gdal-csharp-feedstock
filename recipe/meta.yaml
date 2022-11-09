@@ -1,16 +1,17 @@
-{% set version = "2.0.0" %}
-{% set gdalversion = "3.5.0" %}
+{% set version = "2.1.0" %}
+{% set gdalversion = "3.6.0" %}
+{% set gdalsuffix = "rc2" %}
 
 package:
   name: gdal-csharp
   version: {{ version }}
 
 source:
- url: http://download.osgeo.org/gdal/{{ gdalversion }}/gdal-{{ gdalversion }}.tar.xz
- sha256: d49121e5348a51659807be4fb866aa840f8dbec4d1acba6d17fdefa72125bfc9
+ url: http://download.osgeo.org/gdal/{{ gdalversion }}/gdal-{{ gdalversion }}{{ gdalsuffix }}.tar.xz
+ sha256: f7afa4aa8d32d0799e011a9f573c6a67e9471f78e70d3d0d0b45b45c8c0c1a94
 
 build:
-  number: 2
+  number: 0
  
 requirements:
   build:
