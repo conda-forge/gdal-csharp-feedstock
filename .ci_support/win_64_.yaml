@@ -1,13 +1,13 @@
 c_compiler:
-- vs2022
+- vs2019
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2022
+- vs2019
 gdal:
-- '3.7'
+- '3.6'
 libgdal:
 - '3.7'
 target_platform:
