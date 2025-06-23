@@ -21,9 +21,9 @@ requirements:
     - {{ stdlib("c") }}
     - swig
   host:
-    - libgdal
+    - gdal-master::gdal
   run:
-    - libgdal
+    - gdal-master::gdal
     - dotnet
 
 test:
